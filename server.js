@@ -10,6 +10,8 @@ app.use(express.json());
 
 // routers
 const productRoutes = require("./routes/productRoutes");
+const orderRoutes = require("./routes/orderRoute");
+app.use("/order", orderRoutes);
 app.use("/product", productRoutes);
 
 app.get("/", (req, res) => {

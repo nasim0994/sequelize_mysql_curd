@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-  const Product = sequelize.define("product", {
+  const Size = sequelize.define("size", {
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
@@ -9,10 +9,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    price: {
-      type: DataTypes.INTEGER,
-      allowNull: false
-    },
   });
-  return Product;
+
+  return Size;
 };
